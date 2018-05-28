@@ -1,0 +1,13 @@
+<!-- Generated template for the GoogleMapComponent component -->
+<agm-map [latitude]="lat"
+         [longitude]="lng"
+         [zoom]="zoom">
+
+  <agm-marker *ngFor="let marker of markers; let i = index"
+              [latitude]="marker.lat"
+              [longitude]="marker.lng"
+              [label]="marker.label"
+              [markerDraggable]="marker.draggable">
+
+  </agm-marker>
+</agm-map>

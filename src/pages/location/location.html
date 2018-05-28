@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cinema Locations
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button secondary full (click)="findNearbyLocations()">Find Locations nearby</button>
+  <br>
+  <div #map id="map"></div>
+  <ion-list>
+    <ion-item *ngFor="let cine of theaters" (click)="pushPage('CinemaDetailPage', cine.name)">
+      <h2>{{cine.name}}</h2>
+      <p>{{cine.street}}</p>
+      <p  *ngFor="let times of cine.movies">
+        {{times.title}}
+      </p>
+    </ion-item>
+  </ion-list>
+</ion-content>

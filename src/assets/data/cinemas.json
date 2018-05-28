@@ -1,0 +1,100 @@
+{
+  "cinemas": [
+    { "name": "Autokino Essen",
+      "street": "Sulterkamp 70",
+      "lat": 51.48702,
+      "lng": 6.971270000000004,
+      "movies": [{"title": "Deadpool 2", "time": ["22:15"]}
+      ]},
+
+    { "name": "CinemaxX Essen",
+      "street": "Berliner Platz 4/5",
+      "lat": 51.45826,
+      "lng": 7.003940000000057,
+      "movies": [{"title": "A Quiet Place", "time": ["20:00", "23:00"]},
+        {"title": "Avengers: Infinity War", "time":["14:00", "15:15", "16:30", "17:30", "19:00", "19:30"]},
+        {"title": "Black Panther", "time":["16:45", "22:45"]},
+        {"title": "Criminal Squad", "time": ["22:45"]},
+        {"title": "Deadpool 2", "time": ["14:15", "16:15", "17:30", "19:15", "19:45", "20:00"]},
+        {"title": "Der Sex Pakt", "time": ["14:15", "17:00", "19:45"]},
+        {"title": "Early Man", "time": ["13:45"]},
+        {"title": "Ghostland", "time": ["23:15"]},
+        {"title": "I Feel Pretty", "time": ["14:00", "16.45", "20:30", "23:15"]},
+        {"title": "Jim Knopf und Lukas der Lokomotivführer", "time":["13:45"]},
+        {"title": "Jumanji: Willkommen im Dschungel", "time":["14:30"]},
+        {"title": "Liliane Susewind - Ein tierisches Abenteuer", "time": ["17:00"]},
+        {"title": "Luis und die Aliens", "time": ["13:45", "17:15"]},
+        {"title": "Rampage - Big meets Bigger", "time":["14:45", "17:30", "20:15", "13:15"]},
+        {"title": "Ready Player One", "time":["14:00", "17:00", "19:30", "23:00"]},
+        {"title": "Sherlock Gnomes", "time":["14:00"]},
+        {"title": "Solo: A Star Wars Story", "time":["13:45", "14:15", "15:00", "16:15", "17:00", "18:00", "19:00", "19:30"]}
+      ]},
+
+    { "name": "CinemaxX Mülheim",
+      "street": "Humboldtring 4",
+      "lat": 51.4373634,
+      "lng": 6.957740899999976,
+      "movies": [
+        {"title": "Avengers: Infinity War", "time":["14:00", "16:45", "16:30", "20:15"]},
+        {"title": "Deadpool 2", "time": ["14:00", "17:00", "18:00", "20:00", "21:00"]},
+        {"title": "Der Sex Pakt", "time": ["20:30"]},
+        {"title": "Early Man", "time": ["13:45"]},
+        {"title": "Fünf Freunde und das Tal der Dinosaurier", "time": ["15:15"]},
+        {"title": "I Feel Pretty", "time": ["17:30", "19:30"]},
+        {"title": "Jim Knopf und Lukas der Lokomotivführer", "time":["17:45"]},
+        {"title": "Liliane Susewind - Ein tierisches Abenteuer", "time": ["15:00", "17:30"]},
+        {"title": "Luis und die Aliens", "time": ["14:30", "17:15"]},
+        {"title": "Peter Hase", "time": ["14:30"]},
+        {"title": "Rampage - Big meets Bigger", "time":["15:00", "20:15"]},
+        {"title": "Ready Player One", "time":["17:45"]},
+        {"title": "Solo: A Star Wars Story", "time":["13:45", "14:00", "14:45", "16:15", "17:00", "18:00", "19:30", "20:30"]}
+      ]},
+
+    { "name": "CineStar Oberhausen",
+      "street": "Luise-Albertz-Platz 1",
+      "lat": 51.49297,
+      "lng": 6.881129999999985,
+      "movies": [{"title": "A Quiet Place", "time": ["21:00"]},
+        {"title": "Avengers: Infinity War", "time":["14:00", "16:30", "19:40", "22:30"]},
+        {"title": "Blumhouse präsentiert: Wahrheit oder Pflicht", "time":["18:20", "20:00", "23:30"]},
+        {"title": "Deadpool 2", "time": ["14:00", "17:40", "20:40", "23:00"]},
+        {"title": "Der Sex Pakt", "time": ["23:30"]},
+        {"title": "I Feel Pretty", "time": ["16:45", "19:30"]},
+        {"title": "Jim Knopf und Lukas der Lokomotivführer", "time":["14:00"]},
+        {"title": "Liliane Susewind - Ein tierisches Abenteuer", "time": ["14:00", "17:45"]},
+        {"title": "Luis und die Aliens", "time": ["14:15", "17:00"]},
+        {"title": "Rampage - Big meets Bigger", "time":["14:20", "19:50"]},
+        {"title": "Ready Player One", "time":["15:00"]},
+        {"title": "Sherlock Gnomes", "time":["14:00"]},
+        {"title": "Solo: A Star Wars Story", "time":["14:00", "16:45", "20:15", "22:45"]}
+      ]},
+
+    { "name": "Lichtburg Essen",
+      "street": "Kettwiger Str. 36",
+      "lat": 51.45482790000001,
+      "lng": 7.013171899999975,
+      "movies": [{"title": "Solo: A Star Wars Story", "time": ["13:45", "16:45", "20:00"]}
+      ]},
+
+    { "name": "Lichtburg Filmpalast",
+      "street": "Elsässer Str. 26",
+      "lat": 51.4705638,
+      "lng": 6.854263199999991,
+      "movies": [
+        {"title": "Avengers: Infinity War", "time":["14:00", "16:45", "16:30", "20:15"]},
+        {"title": "Deadpool 2", "time": ["14:00", "17:00", "18:00", "20:00", "21:00"]},
+        {"title": "Der Sex Pakt", "time": ["20:30"]},
+        {"title": "Early Man", "time": ["13:45"]},
+        {"title": "Fünf Freunde und das Tal der Dinosaurier", "time": ["15:15"]},
+        {"title": "I Feel Pretty", "time": ["17:30", "19:30"]},
+        {"title": "Jim Knopf und Lukas der Lokomotivführer", "time":["17:45"]},
+        {"title": "Liliane Susewind - Ein tierisches Abenteuer", "time": ["15:00", "17:30"]},
+        {"title": "Luis und die Aliens", "time": ["14:30", "17:15"]},
+        {"title": "Peter Hase", "time": ["14:30"]},
+        {"title": "Rampage - Big meets Bigger", "time":["15:00", "20:15"]},
+        {"title": "Ready Player One", "time":["17:45"]},
+        {"title": "Solo: A Star Wars Story", "time":["13:45", "14:00", "14:45", "16:15", "17:00", "18:00", "19:30", "20:30"]}
+      ]}
+
+  ]
+}

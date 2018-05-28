@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Kino Scanner</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Use only GPS values</ion-label>
+    <ion-toggle [(ngModel)]="watchOptions.enableHighAccuracy"></ion-toggle>
+  </ion-item>
+
+  <button ion-button block [color]="btnClass" (click)="startWatching()">{{btnText}}</button>
+
+  <ion-list>
+    <ng-container *ngIf="coords">
+      <ion-item>
+        <google-map [mapCoords]="coords" [mapMarkers]="markers" *ngIf="coords" ></google-map>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Latest Latitude</ion-label>
+        <ion-input type="text" [disabled]="true" [(ngModel)]="coords.lat"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Latest Longitude</ion-label>
+        <ion-input type="text" [disabled]="true" [(ngModel)]="coords.lng"></ion-input>
+      </ion-item>
+    </ng-container>
+  </ion-list>
+</ion-content>
