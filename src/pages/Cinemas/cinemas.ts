@@ -10,18 +10,27 @@ import {MovieApiProvider} from "../../providers/movie-api/movie-api";
 })
 export class CinemasPage {
   films: any;
-
+  upcomingFilms:any;
 
   constructor(public navCtrl: NavController, public movieAPIProvider: MovieApiProvider) {
     this.getMovies();
-
-
+    this.getUpcomingMovies()
   }
 
   getMovies(){
     this.movieAPIProvider.getMovies().subscribe((res) =>{
       this.films = res.results;
     })
+  }
+
+  getUpcomingMovies(){
+    this.movieAPIProvider.getUpcomingMovies().subscribe((res) =>{
+      this.upcomingFilms = res.results;
+    })
+  }
+
+  getMovieCard(type:any){
+    return this.upcomingFilms[type];
   }
 
   pushPage(page:string, id:number){

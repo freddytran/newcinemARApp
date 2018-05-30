@@ -7,18 +7,30 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>MovieDetailPage</ion-title>
+    <ion-title>{{film?.title}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-content padding>
   <img src="http://image.tmdb.org/t/p/w780/{{film?.poster_path}}">
-  <ion-title>Cast</ion-title>
-  <ion-scroll scrollX="true" style="height:150px; white-space: nowrap">
-    <ng-container *ngFor="let actors of cast">
-      <img src="http://image.tmdb.org/t/p/w780/{{actors.profile_path}}" style="height:100px; width: 100px">
-    </ng-container>
-  </ion-scroll>
-  <ion-title>Beschreibung</ion-title>
-  <p>{{film?.overview}}</p>
+  <div class="movieSegment">
+    <h5 class="movieSegmentText">
+      Cast
+    </h5>
+  </div>
+  <div class="castScroll">
+    <ion-scroll scrollX="true" style="height:150px; white-space: nowrap">
+      <ng-container *ngFor="let actors of cast">
+        <img src="http://image.tmdb.org/t/p/w780/{{actors.profile_path}}" style="height:100px; width: 100px">
+      </ng-container>
+    </ion-scroll>
+  </div>
+  <div class="movieSegment">
+    <h5 class="movieSegmentText">
+      Beschreibung
+    </h5>
+  </div>
+  <div class="movieDescription">
+    <p>{{film?.overview}}</p>
+  </div>
 </ion-content>

@@ -52,6 +52,8 @@ export class MovieApiProvider {
     return this.http.get((this.defaultApiUrl + movieID + '/credits' + this.defaultApiUrlEnd));
   }
 
-
+  getUpcomingMovies():Observable<any>{
+    return this.http.get(this.defaultApiUrl + 'upcoming' + this.defaultApiUrlEnd + '&region=DE')
+  }
 
 }

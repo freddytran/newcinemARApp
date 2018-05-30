@@ -30,13 +30,15 @@ export class LocationPage {
 
   }
 
-  findNearbyLocations(){
+  /*findNearbyLocations(){
     navigator.geolocation.getCurrentPosition(position => {
       const mapCenter = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       console.log(position.coords.latitude, position.coords.longitude);
       this.initMap(mapCenter);
       this.doNearbySearch(mapCenter);
-    });
+    },(error1) => {
+      console.log("geolocation not supported")
+    }, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
   }
 
   initMap(centerCoordinates: google.maps.LatLng){
@@ -94,7 +96,7 @@ export class LocationPage {
       }
     });
 
-  }
+  }*/
 
   getTheaters(){
     this.theaterProvider.getTheaters().subscribe((res) =>{

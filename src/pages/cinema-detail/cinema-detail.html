@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>CinemaDetailPage</ion-title>
+    <ion-title>{{name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,18 +17,73 @@
 
   <ng-container *ngFor="let kinos of theater">
     <div *ngIf="kinos.name === name">
-      <ion-title>
-        {{kinos.name}}
-      </ion-title>
-      <img src="assets/imgs/Autokino Essen.jpg">
-      <ion-title>
-        Adresse
-      </ion-title>
-      {{kinos.street}}
-      <ion-title>Filme</ion-title>
-      <p  *ngFor="let times of kinos.movies">
-        {{times.title}}
-      </p>
+      <div class="cinemaSegment">
+        <h5 class="cinemaSegmentText">
+          {{kinos.name}}
+        </h5>
+      </div>
+      <img src={{kinos.imgUrl}} style="height:300px">
+      <div class="cinemaSegment">
+        <h5 class="cinemaSegmentText">
+          Adresse
+        </h5>
+      </div>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            Straße:
+          </ion-col>
+          <ion-col>
+            {{kinos.street}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            Postleitzahl:
+          </ion-col>
+          <ion-col>
+            {{kinos.plz}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            Entfernung:
+          </ion-col>
+          <ion-col>
+            {{travelDistance?.text}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            Geschätze Zeit:
+          </ion-col>
+          <ion-col>
+            {{travelTime?.text}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <div #map class="collapse" id="map"></div>
+      <div class="cinemaSegment">
+        <h5 class="cinemaSegmentText">
+          Filme & Vorstellungszeiten
+        </h5>
+      </div>
+      <ion-grid *ngFor="let times of kinos.movies">
+        <div class="movieRow">
+          <ion-row>
+            <ion-col>
+              {{times.title}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col *ngFor="let movieTimes of times.time">
+              <div class="movieTimes">
+                {{movieTimes}}
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-grid>
     </div>
   </ng-container>
 </ion-content>

@@ -2,15 +2,19 @@
   "cinemas": [
     { "name": "Autokino Essen",
       "street": "Sulterkamp 70",
+      "plz": "45356 Essen",
       "lat": 51.48702,
       "lng": 6.971270000000004,
+      "imgUrl": "assets/imgs/Autokino Essen.jpg",
       "movies": [{"title": "Deadpool 2", "time": ["22:15"]}
       ]},
 
     { "name": "CinemaxX Essen",
       "street": "Berliner Platz 4/5",
+      "plz": "45127 Essen",
       "lat": 51.45826,
       "lng": 7.003940000000057,
+      "imgUrl": "assets/imgs/cinemaxx essen.jpg",
       "movies": [{"title": "A Quiet Place", "time": ["20:00", "23:00"]},
         {"title": "Avengers: Infinity War", "time":["14:00", "15:15", "16:30", "17:30", "19:00", "19:30"]},
         {"title": "Black Panther", "time":["16:45", "22:45"]},
@@ -32,8 +36,10 @@
 
     { "name": "CinemaxX Mülheim",
       "street": "Humboldtring 4",
+      "plz": "45472 Mülheim an der Ruhr",
       "lat": 51.4373634,
       "lng": 6.957740899999976,
+      "imgUrl": "assets/imgs/cinemaxx muelheim.jpg",
       "movies": [
         {"title": "Avengers: Infinity War", "time":["14:00", "16:45", "16:30", "20:15"]},
         {"title": "Deadpool 2", "time": ["14:00", "17:00", "18:00", "20:00", "21:00"]},
@@ -52,8 +58,10 @@
 
     { "name": "CineStar Oberhausen",
       "street": "Luise-Albertz-Platz 1",
+      "plz": "46047 Oberhausen",
       "lat": 51.49297,
       "lng": 6.881129999999985,
+      "imgUrl": "assets/imgs/cineStarOberhausen.jpg",
       "movies": [{"title": "A Quiet Place", "time": ["21:00"]},
         {"title": "Avengers: Infinity War", "time":["14:00", "16:30", "19:40", "22:30"]},
         {"title": "Blumhouse präsentiert: Wahrheit oder Pflicht", "time":["18:20", "20:00", "23:30"]},
@@ -71,15 +79,19 @@
 
     { "name": "Lichtburg Essen",
       "street": "Kettwiger Str. 36",
+      "plz": "45127 Essen",
       "lat": 51.45482790000001,
       "lng": 7.013171899999975,
+      "imgUrl": "assets/imgs/lichtburg essen.jpg",
       "movies": [{"title": "Solo: A Star Wars Story", "time": ["13:45", "16:45", "20:00"]}
       ]},
 
     { "name": "Lichtburg Filmpalast",
       "street": "Elsässer Str. 26",
+      "plz": "46045 Oberhausen",
       "lat": 51.4705638,
       "lng": 6.854263199999991,
+      "imgUrl": "assets/imgs/lichtburg filmpalast.jpg",
       "movies": [
         {"title": "Avengers: Infinity War", "time":["14:00", "16:45", "16:30", "20:15"]},
         {"title": "Deadpool 2", "time": ["14:00", "17:00", "18:00", "20:00", "21:00"]},

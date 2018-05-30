@@ -1,3 +1,33 @@
 page-cinema-detail {
 
+  #map{
+      height: 300px;
+    }
 }
+
+.cinemaSegment{
+  background-color: black;
+}
+
+.cinemaSegmentText{
+  color: white;
+  padding:2px;
+  padding-left: 10px;
+}
+
+.movieTimes{
+  background-color: silver;
+  border-radius: 25px;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color:black;
+}
+
+.movieRow{
+  background-color: bisque;
+}
+
+

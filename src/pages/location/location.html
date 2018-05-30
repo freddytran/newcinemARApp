@@ -7,16 +7,19 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button secondary full (click)="findNearbyLocations()">Find Locations nearby</button>
+  <!--<button ion-button secondary full (click)="findNearbyLocations()">Find Locations nearby</button>
   <br>
-  <div #map id="map"></div>
+  <div #map id="map"></div>-->
   <ion-list>
     <ion-item *ngFor="let cine of theaters" (click)="pushPage('CinemaDetailPage', cine.name)">
+      <ion-avatar item-left>
+        <ion-icon name="pin"></ion-icon>
+      </ion-avatar>
+      <ion-avatar item-right>
+        <ion-icon name="arrow-dropright"></ion-icon>
+      </ion-avatar>
       <h2>{{cine.name}}</h2>
-      <p>{{cine.street}}</p>
-      <p  *ngFor="let times of cine.movies">
-        {{times.title}}
-      </p>
+      <p>{{cine.street}} ♦ {{cine.plz}}</p>
     </ion-item>
   </ion-list>
 </ion-content>
